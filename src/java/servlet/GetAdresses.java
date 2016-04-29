@@ -85,7 +85,8 @@ public class GetAdresses extends HttpServlet {
 	{
         // Set response content type
       response.setContentType("text/html");
-
+//http://localhost:8080/Servlet/GetAdresses?name=kvickly&city=Holte
+// http://www.tutorialspoint.com/servlets/servlets-form-data.htm
       PrintWriter out = response.getWriter();
       if(request.getParameter("name")!=null& request.getParameter("city")!=null){
       String title = "avalible "+request.getParameter("name")+" in "+request.getParameter("city");
